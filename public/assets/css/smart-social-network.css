@@ -1,0 +1,355 @@
+.media-main-title{
+    font-size: 26px;
+    letter-spacing: 0.05em;
+    color: #61677c;
+    text-shadow: 1px 1px 0 #fff;
+    padding: 30px;
+  }
+  .bienvenue{
+    margin-top: 50px;
+    font-size: 1.5em;
+    color: dodgerblue;
+    font-weight: bold;
+  }
+  .display{
+    text-decoration: none;
+    color: white;
+    text-shadow: black 1px 0px 1px;
+  }
+
+  .chat-title{
+    margin-top: 30px;
+    font-size: 1.3em;
+  }
+
+.title-content-div{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+  .container-post{
+    width: 100%;
+    border-bottom: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    gap: 10px;
+    padding: 20px;
+  }
+.button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+
+  /* Search section  */
+ /*  FORM  */
+ .form-container{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+.form {
+    display: flex;
+    background-color: #ebecf0;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    padding-left: 1.4rem;
+     /* box-shadow: 3px 3px 5px #babecc, -5px -5px 10px #fff; */
+    background: none;
+    color: #757575;
+  }
+  .form__field {
+    display: grid;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  .input-group__label {
+    /* display: block; */
+    /* padding-left: 10px; */
+    padding:  0 30px;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    color: #61677c;
+    text-shadow: 1px 1px 0 #fff;
+    margin-bottom: 15px;
+  }
+  .input-group__input {
+    /* display: block; */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    /* width: 100%; */
+    background-color: transparent;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    color: #61677c;
+    text-shadow: 1px 1px 0 #fff;
+    padding: 12px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 12px;
+  }
+  .input-group__input:focus {
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+  }
+
+
+
+  /* modal  */
+
+  #editDialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto; 
+    max-width: 700px; 
+    margin: auto;
+    padding: 20px;
+    background: #efeeee;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+    border: none; 
+}
+
+#editDialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#editDialog label {
+    display: flex;
+    flex-direction: column;
+    color: #555F76; /* Couleur du texte */
+}
+
+#editDialog input[type="text"],
+#editDialog textarea {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc; /* Style des champs de saisie */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#editDialog menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.overlay {
+  display: none; 
+  position: fixed; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); 
+  z-index: 999; 
+}
+
+
+/* Chat  */
+
+  .chat-container {
+    width: 80%;
+    margin: 40px auto;
+    background: #F0F0F3;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px #d9d9d9,
+                -20px -20px 50px #ffffff;
+}
+
+.chat-screen {
+    width: 100%;
+    max-height: 60vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post {
+    background: #FFFFFF;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px #d9d9d9,
+                -10px -10px 30px #ffffff;
+    width: 100%;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.post-title, .post-content, small {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.post-title {
+    color: #333333;
+    font-weight: bold;
+}
+
+.post-content, small {
+    color: #6C757D;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+
+
+.new-post-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.new-post-form input, .new-post-form textarea, .post-button {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.new-post-form input, .new-post-form textarea {
+    background: #FFFFFF;
+    width: calc(100% - 120px);
+    box-shadow: inset 8px 8px 16px #d9d9d9,
+                inset -8px -8px 16px #ffffff;
+    
+}
+.new-post-form textarea{
+  margin-left: 15px;
+  padding: 10px;
+}
+.new-post-form textarea::placeholder, new-post-form input{
+  font-size: 14px;
+  padding: 10px;
+}
+
+
+         
+
+  .post-button {
+    background-image: linear-gradient(to right, #FBD3E9 0%, #BB377D  51%, #FBD3E9  100%);
+    padding: 15px 20px;
+    margin-left: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 4px 4px 8px #d9d9d9,
+    -4px -4px 8px #ffffff;
+}
+
+.post-button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+.btn-edit {
+  background-image: linear-gradient(to right, #1D2B64 0%, #F8CDDA  51%, #1D2B64  100%);
+  margin: 10px;
+  padding: 15px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.btn-edit:hover {
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
+}
+         
+.btn-delete1 {
+  background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
+  margin: 10px;
+  padding: 15px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.btn-delete1:hover {
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-cancel{
+  background-image: linear-gradient(to right, #cfcfcf 0%, #e3e3e3  51%, #c9c9c9  100%);
+  margin: 10px;
+  padding: 15px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.btn-cancel:hover {
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 763px) {
+.chat-container {
+  width: 100%;
+  margin: 40px auto;
+  padding: 15px;
+}
+
+#editDialog {
+  width: 380px;
+}
+}

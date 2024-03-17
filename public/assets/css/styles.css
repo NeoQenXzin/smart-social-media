@@ -1,0 +1,202 @@
+/* background: #f3f4f7; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+body {
+    background-color: #efeeee;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Spectral', serif;
+  }
+
+h1, h2{
+  color: #6D7587;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+}
+
+.form-buttons-container{
+    width: 280px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.btn:focus {
+    outline:none !important;
+  }
+  
+  .neumorphic-btn {
+    /* font-size: 20px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 12px;
+    color: #4177eb;
+    background-color: #efeeee;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                inset 0px 0px 4px rgba(255, 255, 255, .2),
+                inset 7px 7px 15px rgba(55, 84, 170, 0),
+                inset -7px -7px 20px rgba(255, 255, 255, 0),
+                0px 0px 4px rgba(255, 255, 255, 0) !important;
+    transition: box-shadow .25s ease !important;
+    cursor: pointer;
+  }
+  
+  .neumorphic-btn:active {  
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                inset 0px 0px 4px rgba(255, 255, 255, 0),
+                inset 7px 7px 15px rgba(55, 84, 170, .15),
+                inset -7px -7px 20px rgba(255, 255, 255, 1),
+                0px 0px 4px rgba(255, 255, 255, .2) !important;
+  }
+  
+  
+  
+  .neumorphic-btn a{
+    text-decoration: none;
+    list-style: none;
+   color:  #6D7587
+  }
+  
+  
+  .neumorphic-card {
+    display: block;    
+    background-color: #efeeee;
+    padding: 40px;  
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                0px 0px 4px rgba(255, 255, 255, .2) !important;
+    border-radius: 30px;
+    /* width: 300px; */
+    /* width: min-content; */
+  }
+  
+  .neumorphic-card__title {
+    color: #555F76;
+    font-size: 22px;
+    padding: 20px 0 10px;
+    text-align: start;
+  }
+  
+  .neumorphic-card__text {
+    padding: 0 0 10px;
+    text-align: start;
+    color: #8D96A8;
+  }
+  
+  .neumorphic-card__outer {
+    background-color: #efeeee;
+    border-radius: 10px;
+    border: 5px solid #efeeee;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                0px 0px 4px rgba(255, 255, 255, .2) !important;  
+    margin: -5px;
+  }
+
+.neumorphic-input {
+    background-color: #efeeee;
+    border-radius: 8px;
+    border: 3px solid #efeeee;
+    box-shadow: 2px 2px 3px rgba(55, 84, 170, .15),
+    inset 0px 0px 4px rgba(255, 255, 255, 0),
+    inset 7px 7px 15px rgba(55, 84, 170, .15),
+    inset -7px -7px 20px rgba(255, 255, 255, 1),
+    0px 0px 4px rgba(255, 255, 255, .2) !important;
+    padding: 10px 15px;
+    outline: none !important;
+    color: #535D74;
+    /* margin: 25px 10px 5px; */
+    margin: 10px auto;
+  }
+  
+  .neumorphic-input-gestion {
+      background-color: #efeeee;
+      border-radius: 0px;
+      border: 3px solid #efeeee;
+      box-shadow: 2px 2px 3px rgba(55, 84, 170, .15),
+      inset 0px 0px 4px rgba(255, 255, 255, 0),
+      inset 7px 7px 15px rgba(55, 84, 170, .15),
+      inset -7px -7px 20px rgba(255, 255, 255, 1),
+      0px 0px 4px rgba(255, 255, 255, .2) !important;
+      padding: 5px 15px;
+      outline: none !important;
+      color: #535D74;
+      margin: 25px 10px 5px;
+    }
+  
+
+ 
+  .neumorphic-card-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    gap: 15px;
+    background-color: #efeeee;
+    padding: 40px;  
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                0px 0px 4px rgba(255, 255, 255, .2) !important;
+    border-radius: 30px;
+    /* width: 300px; */
+    /* width: min-content; */
+  }
+  
+  .neumorphic-card-form__title {
+    color: #555F76;
+    font-size: 22px;
+    padding: 20px 0 10px;
+    text-align: center;
+    margin: 30px auto;
+  }
+  
+  .neumorphic-card-form__text {
+    padding: 0 0 10px;
+    text-align: center;
+    color: #8D96A8;
+  }
+  
+  .neumorphic-card-form__outer {
+    background-color: #efeeee;
+    border-radius: 10px;
+    border: 5px solid #efeeee;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                0px 0px 4px rgba(255, 255, 255, .2) !important;  
+    margin: -5px;
+  }
+  
+  .centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .post-title{
+    color: dodgerblue;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+
+
+
+  /* Media querries  */
+  
